@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="listPageCss/listCss.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jSlider.min.css"/>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/jquery.jSlider.min.js"></script>
+	</head>
+	<body>
+		<header class="w pt30 mb10" id="headerOne">
+			<div class="w1200 ma oh">
+				<a href="##" class="fl db oh">
+					<h1>
+						<img src="../img/logo.jpg" />
+					</h1>
+				</a>
+				<ul class="clearfix fr pt10">
+					<li class="fl f16 oh cp"><a href="##" class="db f16">首页</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">研究与洞察</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">咨迅中心</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">宏观规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">工业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">服务业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">农业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">林业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">关于我们</a><i></i></li>
+				</ul>
+			</div>
+		</header>
+		<header class="w pt15 pb5 mb10" id="headerTwo">
+			<div class="w ma oh">
+				<a href="##" class="db oh ma">
+					<h1>
+						<img src="../img/logo.jpg" />
+					</h1>
+				</a>
+				<div class="mobilMenuNav">
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+				</div>
+				<nav class="mobil-box">
+					<ul class="clearfix fl pt10" id="lymobil">
+						<li class="fl f14 oh cp"><a href="../index.html" class="db f16">首页</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">研究与洞察</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">咨迅中心</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">宏观规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">工业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">服务业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">农业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">林业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">关于我们</a></li>
+					</ul>
+				</nav>
+			</div>
+			<script>
+				$(function() {
+					$('.mobilMenuNav').click(function() {
+						$(this).toggleClass('lymobilOne')
+						if ($(".mobil-box").css("display") == "none") {
+							$(".mobil-box").show(100);
+						} else {
+							$(".mobil-box").hide(100);
+						}
+						if ($("#lymobil").css("right") == "-198px") {
+							$("#lymobil").css('right', '0px');
+							$('#span2').css('display', 'none')
+							$("#span1").css({
+								"transform": "rotate(-45deg)",
+								'margin-bottom': '0',
+								'background':'#fff'
+							})
+							$("#span3").css("transform", "rotate(45deg)")
+							$("#span3").css("background", "#fff")
+						} else {
+							$("#lymobil").css('right', '-198px');
+							$('#span2').css('display', 'block')
+							$("#span1").css({
+								"transform": "rotate(180deg)",
+								'margin-bottom': '8px',
+								'background':'#8E6F64'
+							})
+							$("#span3").css("transform", "rotate(180deg)")
+							$("#span3").css("background", "#8E6F64")
+						}
+					})
+				})
+			</script>
+		</header>
+		
+		<section class="banner w oh">
+			<div class="top oh">
+				<div class="jSlider oh" id="slider1">
+					<div class="oh" id="banner1"></div>
+					<div class="oh" id="banner3"></div>
+				</div>
+			</div>
+		</section>
+		<section class="w oh" id="content">
+			<div class="w1000 ma oh">
+				<p>当前位置>
+				<a href="##">首页</a>
+				>
+				<a href="##">行业资讯</a>
+				>
+				<a href="##">正文</a>
+				</p>
+				<aside id="asideBox" class="fl oh mr30">
+					<span class="aside_title"></span>
+					<!-- <span class="asideNone">-</span> -->
+					<ul class='first_ul'>
+						<span class="m">咨询中心 <b>+</b></span>
+						<a href="##"></a>
+						<li><a href="##">行业资讯</a></li>
+						<li><a href="##">技术工艺</a></li>
+						<li><a href="##">投资热点</a></li>
+						<li><a href="##">产业政策</a></li>
+						<li><a href="##">会展信息</a></li>
+						<li><a href="##">企业动态</a></li>
+						<li><a href="##">财经点评</a></li>
+					</ul>
+					<ul>
+						<span class="m">统计数据 <b>+</b></span>
+						<li><a href="##">行业数据</a></li>
+						<li><a href="##">海关统计</a></li>
+						<li><a href="##">宏观经济</a></li>
+						<li><a href="##">监测数据</a></li>
+						<li><a href="##">经济指标</a></li>
+					</ul>
+					<ul>
+						<span>可行性报告 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>资金申请 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>商业计划书 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>节能评估 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+				
+					<ul>
+						<span>宏观规划 <b>+</b></span>
+						<li><a href="##">十三五规划</a></li>
+						<li><a href="##">十三五卫生与健康规划</a></li>
+						<li><a href="##">十三五国家信息化规划</a></li>
+						<li><a href="##">十三五深化医药卫生体制改革规划</a></li>
+						<li><a href="##">十三五旅游业发展规划</a></li>
+						<li><a href="##">十三五脱贫攻坚规划</a></li>
+						<li><a href="##">十三五生态环境保护规划</a></li>
+						<li class="pr"><a href="##">十三五国家战略性新兴产业发展规划</a></li>
+						<li><a href="##">生态园区规划</a></li>
+						<li><a href="##">循环经济规划</a></li>
+						<li><a href="##">区域经济规划</a></li>
+						<li><a href="##">国民经济规划</a></li>
+						<li><a href="##">新能源规划</a></li>
+						<li><a href="##">节能规划</a></li>
+						<li><a href="##">专家解答</a></li>
+						
+					</ul>
+					<ul>
+						<span>工业规划 <b>+</b></span>
+						<li><a href="##">装备制造业规划</a></li>
+						<li><a href="##">高新技术规划</a></li>
+						<li><a href="##">产业集群规划</a></li>
+						<li><a href="##">资源综合利用规划</a></li>
+						<li><a href="##">环境工程规划</a></li>
+						<li><a href="##">工业园区规划</a></li>
+						<li><a href="##">专家解答</a></li>
+						<li><a href="##">十三五国家战略性新兴产业发展规划</a></li>
+					</ul>
+					<ul>
+						<span>服务业规划 <b>+</b></span>
+						<li><a href="##">现代物流业规划</a></li>
+						<li><a href="##">冷链物流业规划</a></li>
+						<li><a href="##">中小企业规划</a></li>
+						<li><a href="##">现代贸易市场规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>林业规划 <b>+</b></span>
+						<li><a href="##">生态旅游业规划</a></li>
+						<li><a href="##">湿地公园规划</a></li>
+						<li><a href="##">森林公园规划</a></li>
+						<li><a href="##">自然保护区规划</a></li>
+						<li><a href="##">森林城市规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>农业规划 <b>+</b></span>
+						<li><a href="##">畜牧养殖业规划</a></li>
+						<li><a href="##">中药材基地规划</a></li>
+						<li><a href="##">农村能源业规划</a></li>
+						<li><a href="##">商品粮基地规划</a></li>
+						<li><a href="##">粮食增产规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>市场调查 <b>+</b></span>
+						<li><a href="##">消费者满意度调研</a></li>
+						<li><a href="##">企业调研产品调研</a></li>
+						<li><a href="##">销售渠道调研</a></li>
+						<li><a href="##">市场进入调研</a></li>
+						<li><a href="##">营销方案调研</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>行业研究 <b>+</b></span>
+						<li><a href="##">专题报告</a></li>
+						<li><a href="##">英文报告</a></li>
+						<li><a href="##">投资价值分析</a></li>
+						<li><a href="##">发展趋势</a></li>
+						<li><a href="##">市场预测</a></li>
+					</ul>
+				</aside>
+				<script>
+					$(function(){
+						var flag=false;
+						$(".aside_title").click(function() {
+							if(flag){
+								$("#asideBox").animate({
+									left: '-246px'
+								});
+								flag=false;
+							}else{
+								$("#asideBox").animate({
+									left: '0',
+								});
+									flag=true;
+							}
+						});
+					})
+				</script>
+				<div class="fr oh" id="lists">
+					<ul class="clearfix">
+						<li class="">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="../contentPage/contentPage.html" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+						<li class="mt10">
+							<h3 class="c555 f16">[行业资讯]2019年07月26日</h3>
+							<h2 class="mt10"><a href="##" class="db fb c666 f18">传统IT向云计算全面转移的分水岭</a></h2>
+							<p class="c888 f14 mt10 mb10 ti2"><a href="##">“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中</a></p>
+						</li>
+					</ul>
+					<p>
+						<a class="mobileNone" href="##">8113条</a>
+						<a href="##">上一页</a>
+						<a href="##" style="background: #ccc; color: #000; border: none;">1</a>
+						<a href="##">2</a>
+						<a href="##">3</a>
+						<a class="mobileNone" href="##">4</a>
+						<a class="mobileNone" href="##">5</a>
+						<a class="mobileNone" href="##">6</a>
+						<a class="mobileNone" href="##">7</a>
+						<a class="mobileNone" href="##">8</a>
+						<a class="mobileNone" href="##">9</a>
+						<a class="mobileNone" href="##">10</a>..&nbsp;&nbsp;
+						<a class="mobileNone" href="##">541</a>
+						<a href="##">下一页</a>
+					</p>
+				</div>
+			</div>
+			
+			<script>
+				$('aside ul>span').click(function() {
+					var curLi = $(this).parent().find('li');
+					var restUl = $(this).parent().siblings('ul'); 
+					if (curLi.css('display') == 'none') {
+						curLi.slideDown();
+						curLi.parent().find('b').text('-');
+					} else {
+						curLi.slideUp();
+						curLi.parent().find('b').text('+');
+					}
+					restUl.find('li').slideUp();
+					restUl.find('b').text('+');
+				});
+			</script>
+		</section>
+		<footer class="w oh pt40">
+			<div class="ma w1100 oh">
+				<p>
+					<a href="##">关于我们</a>
+					<a href="##">网站地图</a>
+					<a href="##">联系我们</a>
+				</p>
+				<p>中国市场研究网 © 版权所有 北京中经纵横经济研究院</p>
+				<p>单位地址：北京市西城区国宏大厦（国家发改委宏观院）B座23层</p>
+				<p>电话：010-65067990　65067996 传真：010-65066990 全国统一咨询电话：4008790365 邮箱：vip@21360.cn</p>
+				<p>京ICP备07500824号</p>
+			</div>
+		</footer>
+		<footer class="w oh">
+			<div class="ma w1100 oh">
+				<p>
+					<a href="##">关于我们</a>
+					<a href="##">网站地图</a>
+					<a href="##">联系我们</a>
+				</p>
+				<p>中国市场研究网  © 版权所有 北京中经纵横经济研究院 </p>
+				<p>北京市西城区国宏大厦（国家发改委宏观院）B座23层</p>
+				<p>电话：010-65067990　65067996</p>
+				<p>全国统一咨询电话：4008790365 </p>
+				<p>传真：010-65066990 </p>
+				<p>邮箱：vip@21360.cn</p>
+				<p>京ICP备07500824号</p>
+			</div>
+		</footer>
+	</body>
+</html>
